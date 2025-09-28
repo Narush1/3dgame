@@ -1,0 +1,99 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+#nicknameOverlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#nicknameOverlay input {
+  padding: 12px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+#nicknameOverlay button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#nicknameOverlay button:hover {
+  background-color: #45a049;
+}
+
+#chat {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+  max-height: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  z-index: 500;
+}
+
+#chatMessages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 8px;
+  max-height: 150px;
+  word-wrap: break-word;
+}
+
+#chatMessages div {
+  margin-bottom: 4px;
+}
+
+#chat input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  flex-grow: 1;
+  font-size: 14px;
+  margin-right: 5px;
+  outline: none;
+}
+
+#chat button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#chat button:hover {
+  background-color: #0b7dda;
+}
